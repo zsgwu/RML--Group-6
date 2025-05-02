@@ -1,4 +1,4 @@
-# GWU_RML Group 6
+# GWU_RML 
 
 ## Person or Organization Developing Model
 - Apoorva Paranthaman (apoorvap@abc.edu)
@@ -106,7 +106,7 @@ rem_params = {
 | Black vs. White     | 0.855 |
 | Females vs. Males   | 0.948 |
 
-*Table 1. Validation AIR values for race and sex groups.*
+**Table 1**. Validation AIR values for race and sex groups.
 
 See the full EBM notebook with code on GitHub for details of quantitative analysis.
 
@@ -118,55 +118,63 @@ Models were assessed primarily with AUC and AIR. See details below:
 
 | Train AUC | Validation AUC | Test AUC |
 |-----------|----------------|----------|
-| 0.7374    | 0.8250         | 0.831*   |
+| 0.7412    | 0.7437         | 0.8285*   |
 
-*Table 2. AUC values across data partitions.*
+**Table 2**. AUC values across data partitions.
 
-*The test AUC value is taken from [model_eval_2025_03_27_14_06_12.csv](https://github.com/jphall663/GWU_rml/blob/3860843bd60a785452c5dd1cffa522240ea47d82/assignments/model_eval_2025_03_27_14_06_12.csv).*
+**The test AUC value is taken from [model_eval_2025_03_27_14_06_12.csv](https://github.com/jphall663/GWU_rml/blob/3860843bd60a785452c5dd1cffa522240ea47d82/assignments/model_eval_2025_03_27_14_06_12.csv).*
 
 ### Plots for the Best Remediated Model
 #### Basic Data Exploration
  <p align="center">
     <img src="Images/heatmap for correlations_basic data exploration.png" width="400">
 </p>
-*Figure 1: Heatmap showing the correlation between different features, which helps in identifying relationships and dependencies among the features. See full notebook [here](link_to_notebook).*
+
+**Figure 1:** Heatmap showing the correlation between different features, which helps in identifying relationships and dependencies among the features. See full notebook [here](link_to_notebook).
 
 #### Partial Dependence for Top 3 Most Important Variables in EBM Model
  <p align="center">
     <img src="Images/PD loan to value ratio std.png" width="200"><img src="Images/PD property value std.png" width="200"><img src="Images/PD debt to income ratio std.png" width="200"><img src="Images/PD Intro rate period std.png" width="200">
 </p>
-*Figure 2: Best EBM Partial Dependence for top 4 features; 'loan_to_value_ratio_std', 'property_value_std', 'debt_to_income_ratio_std', and 'intro_rate_period_std', using the Explainable Boosting Machine model, showing the relationship between those features and the model's predictions. See full notebook [here](link_to_notebook).*
+
+**Figure 2:** Best EBM Partial Dependence for top 4 features; 'loan_to_value_ratio_std', 'property_value_std', 'debt_to_income_ratio_std', and 'intro_rate_period_std', using the Explainable Boosting Machine model, showing the relationship between those features and the model's predictions. See full notebook [here](link_to_notebook).
 
  <p align="center">
     <img src="Images/Best EBM Feature Importance_EBM only.png" width="300">
 </p>
-*Figure 3: The global feature importance for the EBM model, showing the significance of features, which helps in understanding which features are most influential in the model's predictions. Based on this plot, 'loan_to_value_ratio_std', 'property_value_std', 'debt_to_income_ratio_std' have the highest importance for the model. See full notebook [here](link_to_notebook).*
+
+**Figure 3:** The global feature importance for the EBM model, showing the significance of features, which helps in understanding which features are most influential in the model's predictions. Based on this plot, 'loan_to_value_ratio_std', 'property_value_std', 'debt_to_income_ratio_std' have the highest importance for the model. See full notebook [here](link_to_notebook).
 
  <p align="center">
     <img src="Images/DT Updated for Assignment 4.png" width="700">
 </p>
-*Figure 4: The stolen decision tree model extracts stolen tree as an adversarial example attack, which allowed identifying vulnerabilities in the model's decision-making process. The stolen model was used to find the low and high adversary seed rows for adversary searches. See the full notebook [here](link_to_notebook).*
+
+**Figure 4:** The stolen decision tree model extracts stolen tree as an adversarial example attack, which allowed identifying vulnerabilities in the model's decision-making process. The stolen model was used to find the low and high adversary seed rows for adversary searches. See the full notebook [here](link_to_notebook).
 
  <p align="center">
     <img src="Images/Variable importance for stolen model.png" width="400">
 </p>
-*Figure 5: Variable Importance for H2O Distributed Random Forest highlighting the importance of features for the stolen model.*
+
+**Figure 5:** Variable Importance for H2O Distributed Random Forest highlighting the importance of features for the stolen model.
 
  <p align="center">
     <img src="Images/Global Logloss Residuals.png" width="300">
 </p>
-*Figure 6: The Residuals analysis shows if the model struggles to predict when customers will receive a high-priced loan correctly. It does much better when predicting customers will NOT receive a high-priced loan. There are also some very noticeable outliers. Full notebook [here](link_to_notebook).*
+
+**Figure 6:** The Residuals analysis shows if the model struggles to predict when customers will receive a high-priced loan correctly. It does much better when predicting customers will NOT receive a high-priced loan. There are also some very noticeable outliers. Full notebook [here](link_to_notebook).
 
  <p align="center">
     <img src="Images/ICE Plot for Feature Index 0.png" width="300">
 </p>
-*Figure 7: The individual conditional expectation (ICE) curves for Feature Index 0. Each line represents the partial dependence of the model's prediction on the feature value for a single instance. See full notebook [here](link_to_notebook).*
+
+**Figure 7:** The individual conditional expectation (ICE) curves for Feature Index 0. Each line represents the partial dependence of the model's prediction on the feature value for a single instance. See full notebook [here](link_to_notebook).
 
 ### Address Other Alternative Models Considered
  <p align="center">
     <img src="Images/Local feature across models.png" width="600">
 </p>
-*Figure 8: Some other models include GLM and Monotonic XGBoost model and the local feature importance has been compared across models in 10th, 50th, and 90th Percentile. See full notebook [here](link_to_notebook).*
+
+**Figure 8:** Some other models include GLM and Monotonic XGBoost model and the local feature importance has been compared across models in 10th, 50th, and 90th Percentile. See full notebook [here](link_to_notebook).
 
 ## Ethical Considerations
 ### Potential Negative Impacts of Using the Best Remediated Model
