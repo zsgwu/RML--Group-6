@@ -188,7 +188,7 @@ Models were assessed primarily with AUC and AIR. See details below:
 - **Legal Complications:** The model might behave unpredictably when exposed to new types of data or adversarial examples, leading to unintended consequences such as legal penalties.
 
 ### Unexpected Results Encountered During Training
-- 
+- During the training of the model to predict high-priced loans, several unexpected results were observed: the residuals were highly unbalanced, with higher residuals for high-priced loans and lower residuals for non-high-priced loans, indicating the model struggled to accurately predict high-priced loans while performing better for non-high-priced loans. Additionally, there were noticeable outliers, particularly for high-priced loans, suggesting significant prediction errors in certain cases. These findings highlight the need for better model calibration, improved feature engineering, and thorough outlier analysis to enhance the model's accuracy and reliability.
 
 ## Explanation of Some Functions and Processes
 - **get_max_f1_frame:** This function calculates the optimal cutoff for the model based on the F1 score.
