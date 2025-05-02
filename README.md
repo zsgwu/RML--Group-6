@@ -108,7 +108,7 @@ rem_params = {
 
 **Table 1**. Validation AIR values for race and sex groups.
 
-See the full EBM notebook with code on GitHub for details of quantitative analysis.
+See the [full EBM notebook](https://github.com/apoorvap11/RML--Group-6/blob/c5932ee4ec54cb5f5526c5a62e53323f9d668c19/Group6_assign_3_.ipynb) with code on GitHub for details of quantitative analysis.
 
 ### Metrics Used to Evaluate the Best Remediated Model
 The metrics used are AUC (Area Under the Curve) and F1-score, installed from `interpret.perf` and `sklearn.metrics` packages.
@@ -188,7 +188,7 @@ Models were assessed primarily with AUC and AIR. See details below:
 - **Legal Complications:** The model might behave unpredictably when exposed to new types of data or adversarial examples, leading to unintended consequences such as legal penalties.
 
 ### Unexpected Results Encountered During Training
-- After fitting the EBM model, the calculated model AUC turned out to be 1, which is not possible in real-world scenarios.
+- 
 
 ## Explanation of Some Functions and Processes
 - **get_max_f1_frame:** This function calculates the optimal cutoff for the model based on the F1 score.
