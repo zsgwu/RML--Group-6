@@ -1,9 +1,9 @@
 # GWU_RML Group 6
 
 ## Person or Organization Developing Model
-- Apoorva Paranthaman (apoorvap@gwmail.gwu.edu)
-- Maryam Shahbaz Ali (maryamshahbaz.ali@email.gwu.edu)
-- Zahra Sultani (zahra.sultani@gwmail.gwu.edu)
+- Apoorva Paranthaman (apoorvap@abc.edu)
+- Maryam Shahbaz Ali (maryamshahba.a@abc.edu)
+- Zahra Sultani (zahrasultai@abc.edu)
 
 ## Model Information
 - **Model Date:** May 2025
@@ -11,16 +11,16 @@
 - **License:** Apache License
 
 ## Intended Use
-### Business Value of Best Remediated Model
-The remediated model, based on data from the Home Mortgage Disclosure Act (HMDA), tests for biases between men and women, as well as races such as black vs. white and other demographic categories in the dataset. The business value of the best remediated model is determined by its ability to meet the project’s business goals. Some possible business values include:
-- **Market-Leading Status:** Enhances reputation through fair lending practices.
-- **Obligations to Lenders/Creditors:** Ensures compliance with fair lending laws.
-- **Shareholder Returns:** Reduces legal risks and improves customer satisfaction.
-- **Profitability:** Identifies profitable, unbiased lending opportunities.
-- **Sustainability:** Builds trust and loyalty among diverse customers.
-- **Growth Prospects:** Opens new market segments through fair criteria.
+### Value of Best Remediated Model
+The remediated model, based on data from the Home Mortgage Disclosure Act (HMDA), is designed solely for educational purposes. It tests for biases between men and women, as well as races such as black vs. white and other demographic categories in the dataset. The primary goal of this model is to serve as a learning tool for students to understand and practice identifying and addressing biases in data. This model is not built to resolve a real-world problem. However, by engaging in such practices in a similar real-world project, a remediated model can help the project achieve some of the following potential values:
+-	**Market-Leading Status:** Enhances reputation through fair lending practices.
+-	**Obligations to Lenders/Creditors:** Ensures compliance with fair lending laws.
+-	**Shareholder Returns:** Reduces legal risks and improves customer satisfaction.
+-	**Profitability:** Identifies profitable, unbiased lending opportunities.
+-	**Sustainability:** Builds trust and loyalty among diverse customers.
+-	**Growth Prospects:** Opens new market segments through fair criteria.
 
-### How to Use the Best Remediated Model
+### How to Use the Best Remediated Model 
 The best remediated model is used for assessing bias and can be used for the following purposes:
 - **Intended Scope:** Use for assessing and mitigating biases in mortgage lending.
 - **Capabilities and Limitations:** Understand its ability to detect and correct biases.
@@ -59,7 +59,8 @@ The best remediated model is used for assessing bias and can be used for the fol
 | Column Name | Type        | Measurement Level | Description                                                                 |
 |-------------|-------------|-------------------|-----------------------------------------------------------------------------|
 | race        | Target      | Int               | A combined race column created from individual race indicators (black, Asian, white, other) |
-| Phat        | Predictions | Float             | Predicted probabilities from the model                                      |
+| male        | demographic info | Int             | whether a person identifies as male (1) or not male (0)                                     |
+| female        | demographic info | Int             | whether a person identifies as female (1) or not female (0)                                     |
 | High_priced | Target      | Int               | Target variable indicating whether the mortgage loan is high-priced         |
 
 ## Evaluation Data
